@@ -2,8 +2,9 @@ Source code for <http://netflixpivot.cloudapp.net>.
 
 Prerequisites
 -------------
-To run this, you'll need the [Windows Azure SDK](http://windowsazure.com/sdk) as well as the binaries for the [PivotViewer Control](http://www.silverlight.net/learn/data-networking/pivot-viewer/pivotviewer-control).
-(You may need to update the references in the NetflixPivotViewer project to point to your location of the Pivot binaries.)
+To run this, you'll need the [Windows Azure SDK](http://windowsazure.com/sdk) as well as the binaries for the [PivotViewer Control](http://www.silverlight.net/learn/data-networking/pivot-viewer/pivotviewer-control)
+and [Deep Zoom Tools](http://seadragon.com/developer/creating-content/deep-zoom-tools/). (You may need to update the references in the NetflixPivotViewer project to point
+to your location of those binaries.)
 
 Deploying
 ---------
