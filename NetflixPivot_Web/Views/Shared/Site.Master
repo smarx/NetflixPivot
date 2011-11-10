@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>Pivot View of Netflix Instant Watch Movies</h1>
+            </div>
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div id="footer">
+            <p>Created by Steve Marx, <a href="http://windowsazure.com">Windows Azure</a> team.</p>
+            <p><a href="http://blog.smarx.com/posts/pivot-odata-and-windows-azure-visual-netflix-browsing">Learn how it was built.</a></p>
+            <a href="http://www.netflix.com"><img style="position:absolute;bottom:0;left:0;padding:5px;" src="../../Content/images/NetflixAPILogo.png" alt="Delivered by Netflix" /></a>
+            <a href="http://windowsazure.com"><img style="position:absolute;bottom:0;right:0;padding: 5px;" src="../../Content/images/PoweredByWindowsAzure_small.png" alt="Built on Windows Azure" /></a>
+        </div>
+    </div>
+</body>
+</html>

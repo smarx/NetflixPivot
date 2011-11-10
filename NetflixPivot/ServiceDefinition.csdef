@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="NetflixPivot" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WebRole name="NetflixPivot_Web">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="HttpIn" endpointName="HttpIn" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+      <Setting name="CdnHost" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="http" port="80" />
+    </Endpoints>
+  </WebRole>
+  <WorkerRole name="NetflixPivot_Worker" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="PivotScratch" cleanOnRoleRecycle="true" sizeInMB="10000" />
+    </LocalResources>
+  </WorkerRole>
+</ServiceDefinition>

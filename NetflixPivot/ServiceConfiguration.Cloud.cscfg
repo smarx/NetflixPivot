@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="NetflixPivot" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="NetflixPivot_Web">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="CdnHost" value="" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="NetflixPivot_Worker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
